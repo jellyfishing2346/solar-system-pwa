@@ -5,7 +5,7 @@ const planetTitle = document.getElementById('planetTitle');
 const planetDescription = document.getElementById('planetDescription');
 const planetAudio = document.getElementById('planetAudio');
 const planetMenu = document.getElementById('planetMenu');
-const installBtn = document.getElementById('installBtn');
+// Removed duplicate declaration of installBtn
 
 // App data
 let solarData = [];
@@ -75,22 +75,58 @@ function drawStars() {
 
 // PWA Installation
 let deferredPrompt;
+const installBtn = document.getElementById('installBtn');
+
+// Hide the install button initially
+installBtn.style.display = 'none';
 
 window.addEventListener('beforeinstallprompt', (e) => {
+  console.log('beforeinstallprompt event triggered');
+  // Prevent the mini-infobar from appearing on mobile
   e.preventDefault();
+  // Stash the event so it can be triggered later
   deferredPrompt = e;
+  // Show the install button
   installBtn.style.display = 'block';
+  
+  // Optional: Log the event for debugging
+  console.log('Deferred prompt stored:', deferredPrompt);
 });
 
 installBtn.addEventListener('click', async () => {
+  console.log('Install button clicked');
   if (deferredPrompt) {
+    console.log('Showing install prompt');
+    // Show the install prompt
     deferredPrompt.prompt();
+    
+    // Wait for the user to respond to the prompt
     const { outcome } = await deferredPrompt.userChoice;
-    if (outcome === 'accepted') {
-      installBtn.style.display = 'none';
-    }
+    console.log(`User response to the install prompt: ${outcome}`);
+    
+    // Hide the install button whether they accepted or dismissed
+    installBtn.style.display = 'none';
+    
+    // We've used the prompt, and can't use it again
     deferredPrompt = null;
+    
+    // Optional: Track the installation
+    if (outcome === 'accepted') {
+      console.log('User accepted the install prompt');
+      // You might want to track installations in analytics here
+    } else {
+      console.log('User dismissed the install prompt');
+    }
+  } else {
+    console.log('No deferred prompt available');
   }
+});
+
+// Track successful installation
+window.addEventListener('appinstalled', () => {
+  console.log('PWA was successfully installed');
+  installBtn.style.display = 'none';
+  // You might want to track installations in analytics here
 });
 
 // Register Service Worker
