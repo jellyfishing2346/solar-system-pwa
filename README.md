@@ -1,15 +1,33 @@
-# Solar System PWA
+# Solar System Explorer - Progressive Web App (PWA)
 
-## Key Elements Included:
+![App Screenshot](images/screenshot.png)
 
-1. **Project Overview**: Clear description of what the app does
-2. **Features**: Highlighted with emojis for visual scanning
-3. **Installation Instructions**: Both for end-users and developers
-4. **Project Structure**: Helps others understand your organization
-5. **Usage Guide**: How to interact with the app
-6. **Customization Section**: Explains how to modify content
-7. **Browser Support**: Sets expectations for compatibility
-8. **Future Plans**: Shows potential for growth
-9. **Credits & License**: Important for academic projects
+An interactive educational Progressive Web App that lets users explore our solar system with visual representations, detailed information, and audio narrations.
 
-You can copy this directly into a `README.md` file in your project root. For the screenshot, you'll need to add an actual screenshot of your app to the images folder and update the path if needed.
+## Features
+
+- 🚀 **Interactive Solar System Visualization**: Beautiful canvas rendering of planets in orbit
+- 📱 **PWA Ready**: Installable on devices and works offline
+- 🔊 **Audio Narration**: Learn about each planet with audio descriptions
+- 📊 **Educational Content**: Detailed information about each celestial body
+- 🔍 **Responsive Design**: Works on mobile, tablet, and desktop
+- ⚡ **Fast Loading**: Service worker caches all assets for quick loading
+
+## Technologies Used
+
+- HTML5
+- CSS3 (with Bootstrap 5)
+- JavaScript (Canvas API, Web Audio API)
+- Progressive Web App technologies (Service Workers, Web App Manifest)
+
+## Installation
+
+### Option 1: Install as PWA
+1. Visit the live website in Chrome/Edge
+2. Click the "Install App" button when prompted
+3. Confirm installation
+
+### Option 2: Local Development
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/solar-system-pwa.git
