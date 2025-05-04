@@ -1,4 +1,4 @@
-# solar-system-pwa
+# Solar System PWA
 
 ## Key Elements Included:
 
