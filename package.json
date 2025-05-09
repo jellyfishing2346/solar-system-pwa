@@ -1,0 +1,20 @@
+{
+    "name": "solar-system-pwa",
+    "version": "1.0.0",
+    "description": "![App Screenshot](images/screenshot.png)",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jellyfishing2346/solar-system-pwa.git"
+    },
+    "bugs": {
+        "url": "https://github.com/jellyfishing2346/solar-system-pwa/issues"
+    },
+    "homepage": "https://github.com/jellyfishing2346/solar-system-pwa#readme"
+}
