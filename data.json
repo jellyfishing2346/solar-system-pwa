@@ -1,0 +1,58 @@
+{
+    "solarSystem": [
+      {
+        "title": "Sun",
+        "description": "The Sun is the star at the center of our solar system. It accounts for about 99.86% of the mass in the solar system and is roughly 4.6 billion years old.",
+        "image": "images/sun.png",
+        "audio": "audio/sun.mp3"
+      },
+      {
+        "title": "Mercury",
+        "description": "Mercury is the smallest and innermost planet in the Solar System. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the planets.",
+        "image": "images/mercury.png",
+        "audio": "audio/mercury.mp3"
+      },
+      {
+        "title": "Venus",
+        "description": "Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. Venus is the brightest natural object in Earth's night sky after the Moon.",
+        "image": "images/venus.png",
+        "audio": "audio/venus.mp3"
+      },
+      {
+        "title": "Earth",
+        "description": "Earth is the third planet from the Sun and the only astronomical object known to harbor life. About 29% of Earth's surface is land with the remaining 71% covered with water.",
+        "image": "images/earth.png",
+        "audio": "audio/earth.mp3"
+      },
+      {
+        "title": "Mars",
+        "description": "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System. Mars is often called the 'Red Planet' due to iron oxide on its surface.",
+        "image": "images/mars.png",
+        "audio": "audio/mars.mp3"
+      },
+      {
+        "title": "Jupiter",
+        "description": "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass one-thousandth that of the Sun but two-and-a-half times that of all the other planets combined.",
+        "image": "images/jupiter.png",
+        "audio": "audio/jupiter.mp3"
+      },
+      {
+        "title": "Saturn",
+        "description": "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius about nine times that of Earth.",
+        "image": "images/saturn.png",
+        "audio": "audio/saturn.mp3"
+      },
+      {
+        "title": "Uranus",
+        "description": "Uranus is the seventh planet from the Sun. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.",
+        "image": "images/uranus.png",
+        "audio": "audio/uranus.mp3"
+      },
+      {
+        "title": "Neptune",
+        "description": "Neptune is the eighth and farthest known planet from the Sun in the Solar System. It is the fourth-largest planet by diameter and the third-most-massive planet.",
+        "image": "images/neptune.png",
+        "audio": "audio/neptune.mp3"
+      }
+    ]
+  }
